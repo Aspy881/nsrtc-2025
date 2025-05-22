@@ -43,21 +43,19 @@ function Navbar({ transparent = false }) {
     : "text-blue-800 hover:text-red-600";
 
   return (
-    <header
-      className={`${navbarClass} fixed top-0 left-0 w-full z-50 transition-all duration-300`}
+   <header
+      className={`${navbarClass} fixed top-0 left-0 px-15 w-full z-50 transition-all duration-300`}
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-3">
         {/* Logo & Mobile Toggle */}
-        <div className="flex items-center justify-between w-full md:w-auto mb-4 md:mb-0">
+        <div className="flex items-center mx-5 justify-between w-full md:w-auto mb-4 md:mb-0">
           <Link to="/">
             <img
               src={
-                transparent && !isScrolled
-                  ? `${PUBLIC_URL}images/mit-wpu-logo-white.png`
-                  : `${PUBLIC_URL}images/mit-wpu-logo.png`
+               `${PUBLIC_URL}images/nsrtc-logo.png`
               }
-              alt="MIT World Peace University Logo"
-              className="h-26 w-auto"
+              alt="NSRTC Logo"
+              className="h-30 w-auto"
             />
           </Link>
 
@@ -85,7 +83,7 @@ function Navbar({ transparent = false }) {
             <button
               className={`flex items-center ${textColorClass} font-semibold focus:outline-none`}
             >
-              NSRTC <ChevronDown className="ml-1 h-4 w-4" />
+              About <ChevronDown className="ml-1 h-4 w-4" />
             </button>
             <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-200 z-50">
               <div className="py-1">
@@ -115,7 +113,7 @@ function Navbar({ transparent = false }) {
             >
               Committee <ChevronDown className="ml-1 h-4 w-4" />
             </button>
-            <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md hidden group-hover:block z-50">
+            <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-200 z-50">
               <div className="py-1">
                 {[
                   ["Patrons", "/committees/patrons"],
@@ -142,6 +140,9 @@ function Navbar({ transparent = false }) {
           </NavLink>
           <NavLink to="/registration" className={textColorClass}>
             Registration
+          </NavLink>
+          <NavLink to="/registration" className={textColorClass}>
+            Sponsorship
           </NavLink>
           <NavLink to="/contact" className={textColorClass}>
             Contact

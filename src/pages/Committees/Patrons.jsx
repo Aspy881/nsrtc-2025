@@ -1,5 +1,5 @@
 import SectionTitle from "../../components/atoms/SectionTitle";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 
 export default function Patrons() {
   const patrons = [
@@ -7,31 +7,31 @@ export default function Patrons() {
       name: "Padma Vibhushan Dr. Raghunath A. Mashelkar",
       title: "Former Director General",
       affiliation: "CSIR, New Delhi",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Raghunath A. Mashelkar.jpg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Raghunath-A-Mashelkar.jpg`,
     },
     {
       name: "Padma Bhushan Dr. Vijay P. Bhatkar",
       title: "Founder Director, C-DAC",
       affiliation: "Former Chancellor, Nalanda University",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Vijay P. Bhatkar.jpg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Vijay-P-Bhatkar.jpg`,
     },
     {
       name: "Padma Shri Prof. Dr. Ganapati D. Yadav",
       title: "Former Vice-Chancellor",
       affiliation: "ICT Mumbai",
-      image: `${PUBLIC_URL}imgs/patrons/Prof. Dr. Ganapati D. Yadav.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Prof-Dr-Ganapati-Yadav.jpeg`,
     },
     {
       name: "Revered Prof. Dr. Vishwanath D. Karad",
       title: "Founder President, MIT-WPU",
       affiliation: "Creator-World Peace Dome, Pune",
-      image: `${PUBLIC_URL}imgs/patrons/Prof. Dr. Vishwanath D. Karad.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Prof-Dr-Vishwanath-Karad.jpeg`,
     },
     {
       name: "Dr. Rahul V. Karad",
       title: "Executive President",
       affiliation: "MIT-WPU",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Rahul V. Karad.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Rahul-V-Karad.jpeg`,
     },
   ];
 

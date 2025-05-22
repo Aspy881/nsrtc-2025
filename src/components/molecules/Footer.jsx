@@ -16,7 +16,6 @@ const Footer = () => {
     <>
       <footer className="bg-[#1E2B99] text-white px-6 py-10">
         <div className="w-full grid grid-cols-1 md:grid-cols-[auto_1fr_1fr_1fr] gap-8 px-8 lg:px-16 items-start text-sm">
-
           {/* Logo + Divider */}
           <div className="flex items-center relative">
             <img
@@ -31,16 +30,29 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p>MIT World Peace University<br />Kothrud, Pune</p>
+            <p>
+              MIT World Peace University
+              <br />
+              Kothrud, Pune
+            </p>
             <div className="flex items-start gap-2">
               <FaEnvelope className="mt-[3px]" />
-              <a href="mailto:nsrtc2025@mitwpu.edu.in" className="hover:text-yellow-300">
+              <a
+                href="mailto:nsrtc2025@mitwpu.edu.in"
+                className="hover:text-yellow-300"
+              >
                 nsrtc2025@mitwpu.edu.in
               </a>
             </div>
             <div className="flex items-start gap-2">
               <FaPhone className="mt-[3px]" />
-              <p>+91 83093 37736 | 94230 14560</p>
+              <p className="text-white-700">
+                +91 83093 37736
+                <br />
+                +91 94230 14560
+                <br />
+                +91 92302 30392
+              </p>
             </div>
           </div>
 
@@ -119,9 +131,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-
       </footer>
-              <Copyright />
+      <Copyright />
     </>
   );
 };

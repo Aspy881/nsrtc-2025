@@ -4,7 +4,7 @@ import QuoteSlider from "../components/organisms/QuoteSlider";
 import VideoSlider from "../components/organisms/VideoSlider";
 import SectionTitle from "../components/atoms/SectionTitle";
 import { ArrowRight } from "lucide-react";
-import { PUBLIC_URL } from '../config';
+import { PUBLIC_URL } from "../config";
 
 export default function Home() {
   const patrons = [
@@ -12,34 +12,34 @@ export default function Home() {
       name: "Padma Vibhushan Dr. Raghunath A. Mashelkar",
       title: "Former Director General",
       affiliation: "CSIR, New Delhi",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Raghunath A. Mashelkar.jpg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Raghunath-A-Mashelkar.jpg`,
     },
     {
       name: "Padma Bhushan Dr. Vijay P. Bhatkar",
       title: "Founder Director, C-DAC",
       affiliation: "Former Chancellor, Nalanda University",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Vijay P. Bhatkar.jpg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Vijay-P-Bhatkar.jpg`,
     },
     {
       name: "Padma Shri Prof. Dr. Ganapati D. Yadav",
       title: "Former Vice-Chancellor",
       affiliation: "ICT Mumbai",
-      image: `${PUBLIC_URL}imgs/patrons/Prof. Dr. Ganapati D. Yadav.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Prof-Dr-Ganapati-Yadav.jpeg`,
     },
     {
       name: "Revered Prof. Dr. Vishwanath D. Karad",
       title: "Founder President, MIT-WPU",
       affiliation: "Creator-World Peace Dome, Pune",
-      image: `${PUBLIC_URL}imgs/patrons/Prof. Dr. Vishwanath D. Karad.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Prof-Dr-Vishwanath-Karad.jpeg`,
     },
     {
       name: "Dr. Rahul V. Karad",
       title: "Executive President",
       affiliation: "MIT-WPU",
-      image: `${PUBLIC_URL}imgs/patrons/Dr. Rahul V. Karad.jpeg`,
+      image: `${PUBLIC_URL}imgs/patrons/Dr-Rahul-V-Karad.jpeg`,
     },
   ];
-  
+
   return (
     <>
       {/* Hero section is handled by HomeLayout */}
@@ -49,16 +49,16 @@ export default function Home() {
 
       {/* About the Conference */}
       <section className="relative py-16 bg-white overflow-hidden">
-  {/* Background Image Layer */}
-  <div className="absolute inset-0 bg-[url('/nsrtc/images/scitech-bg.png')] bg-cover bg-center opacity-17 pointer-events-none"></div>
+        {/* Background Image Layer */}
+        <div className="absolute inset-0 bg-[url('/nsrtc/images/scitech-bg.png')] bg-cover bg-center opacity-17 pointer-events-none"></div>
 
-  {/* Content Layer */}
-  <div className="relative z-10 container mx-auto px-4">
-    <SectionTitle
-      title="About The Conference"
-      subtitle="Join us for the 2nd National Scientists Round Table Conference"
-    />
-    <div className="max-w-4xl mx-auto text-justify">
+        {/* Content Layer */}
+        <div className="relative z-10 container mx-auto px-4">
+          <SectionTitle
+            title="About The Conference"
+            subtitle="Join us for the 2nd National Scientists Round Table Conference"
+          />
+          <div className="max-w-4xl mx-auto text-justify">
             <p className="text-[#212121] mb-6">
               The Second National Scientists Round Table Conference (NSRTC 2025)
               will be held on July 18-20, 2025, at Dr. Vishwanath Karad MIT
@@ -115,7 +115,8 @@ export default function Home() {
                 <div className="aspect-square relative">
                   <img
                     src={
-                      patron.image || `${PUBLIC_URL}placeholder.svg?height=300&width=300`
+                      patron.image ||
+                      `${PUBLIC_URL}placeholder.svg?height=300&width=300`
                     }
                     alt={patron.name}
                     className="w-full h-full object-cover"

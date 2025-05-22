@@ -24,25 +24,25 @@ export default function RegistrationPage() {
         {/* Registration Fees */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden mb-12">
           <div className="bg-blue-800 text-white p-6">
-            <h3 className="text-2xl font-bold">Registration Fees</h3>
+            <h3 className="text-3xl font-bold">Registration Fees</h3>
             <p className="mt-2 text-gray-200">
               For participants outside of MIT-WPU
             </p>
           </div>
           <div className="p-6">
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auo">
               <table className="w-full">
                 <thead>
                   <tr className="border-b-2 border-gray-200">
-                    <th className="text-left py-3 px-2">Category</th>
-                    <th className="text-right py-3 px-2">Fee</th>
+                    <th className="text-left text-2xl py-3 px-2">Category</th>
+                    <th className="text-right text-2xl   py-3 px-2">Fee</th>
                   </tr>
                 </thead>
                 <tbody>
                   {registrationFees.map((item, index) => (
                     <tr key={index} className="border-b border-gray-100">
-                      <td className="py-3 px-2">{item.category}</td>
-                      <td className="text-right py-3 px-2 font-semibold">
+                      <td className="text-lg py-3 px-2">{item.category}</td>
+                      <td className="text-right text-lg py-3 px-2 font-bold">
                         {item.fee}
                       </td>
                     </tr>
@@ -50,7 +50,7 @@ export default function RegistrationPage() {
                 </tbody>
               </table>
             </div>
-            <div className="mt-6 text-sm text-gray-600">
+            <div className="mt-6 text-lg text-gray-500">
               <p>• Registered Online Attendee will receive an e-certificate</p>
               <p>
                 • For registration of Online Attendee (International), contact

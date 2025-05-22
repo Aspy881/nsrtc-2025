@@ -1,5 +1,5 @@
 import SectionTitle from "../../components/atoms/SectionTitle";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 
 export default function CoChairmen() {
   const members = [
@@ -14,20 +14,20 @@ export default function CoChairmen() {
       name: "Prof. Dr. R. M. Chitnis",
       title: "Co-Chairman",
       affiliation: "Vice Chancellor, MIT-WPU",
-      image: `${PUBLIC_URL}imgs/committees/Prof. Dr. R. M. Chitnis.jpg`,
+      image: `${PUBLIC_URL}imgs/committees/Prof-Dr-RM-Chitnis.jpg`,
     },
     {
       name: "Prof. Dr. Prasad Khandekar",
       title: "Co-Chairman",
       affiliation: "Chief Academic Officer, MIT-WPU",
-      image: `${PUBLIC_URL}imgs/committees/Prof. Dr. Prasad Khandekar.png`,
+      image: `${PUBLIC_URL}imgs/committees/Prof-Dr-Prasad-Khandekar.png`,
     },
     {
       name: "Dr. Sanjay Kamtekar",
       title: "Secretary",
       affiliation:
         "Provost, Internationalization, MIT-WPU | Former VP, Global Marketing & Strategy, CAMECA, USA",
-      image: `${PUBLIC_URL}imgs/committees/Dr. Sanjay Kamtekar.jpg`,
+      image: `${PUBLIC_URL}imgs/committees/Dr-Sanjay-Kamtekar.jpg`,
     },
   ];
 

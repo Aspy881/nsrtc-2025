@@ -1,5 +1,5 @@
 import SectionTitle from "../../components/atoms/SectionTitle";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 
 export default function Convener() {
   const allConveners = [
@@ -7,19 +7,26 @@ export default function Convener() {
       name: "Prof. Dr. Murthy Chavali",
       title: "Dean, Research and Development",
       affiliation: "MIT-WPU",
-      image: `${PUBLIC_URL}imgs/convener/Prof. Dr.  Murthy Chavali.jpeg`,
+      image: `${PUBLIC_URL}imgs/convener/Prof-Dr-Murthy-Chavali.jpeg`,
     },
     {
       name: "Prof. Dr. Bharat B. Kale, FRSC",
       title: "Director, Center for Materials Science, MIT-WPU",
       affiliation: "Former Director, C-MET, Pune",
-      image: `${PUBLIC_URL}imgs/convener/Prof. Dr. Bharat B. Kale.jpeg`,
+      image: `${PUBLIC_URL}imgs/convener/Prof-Dr-Bharat-Kale.jpeg`,
     },
     {
       name: "Prof. Dr. Siddharth Chakrabarti",
       affiliation: "MIT-WPU",
       title: "Dean, School of Engineering and Technology",
       image: `${PUBLIC_URL}imgs/convener/Siddharth-Chakrabarti.webp`,
+    },
+    {
+      name: " Prof. Dr. Anup Kale",
+      affiliation: "MIT-WPU",
+      title:
+        " Dean In-charge, School of Science and Environmental Studies, MIT-WPU",
+      image: `${PUBLIC_URL}imgs/convener/Prof-Dr-Anup-Kale.jpeg`,
     },
   ];
 

@@ -1,5 +1,5 @@
 import CommitteeSection from "../../components/organisms/CommitteeSection";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 
 export default function Advisory() {
   const advisoryCommittee = [
@@ -7,49 +7,49 @@ export default function Advisory() {
       name: "Padma Shri Prof. Dr. Ashutosh Sharma",
       title: "Former Secretary, DST",
       affiliation: "IIT Kanpur",
-      image: `${PUBLIC_URL}imgs/advisory/ashutosh_sharma.jpg`,
+      image: `${PUBLIC_URL}imgs/advisory/ashutosh-sharma.jpg`,
     },
     {
       name: "Prof. Dr. Shekhar Mande",
       title: "Bioinformatics Centre, SPPU, Pune",
       affiliation: "Former Director General, CSIR",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. Shekhar Mande.jpeg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-Shekhar-Mande.jpeg`,
     },
     {
       name: "Prof. Dr. M. S. Ramachandra Rao",
       title: "",
       affiliation: "IIT Madras",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. M. S. Ramachandra Rao.jpg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-MS-Ramachandra-Rao.jpg`,
     },
     {
       name: "Dr. Dinesh K. Aswal",
       title: "BARC Mumbai",
       affiliation: "Former Director, NPL New Delhi",
-      image: `${PUBLIC_URL}imgs/advisory/Dr. Dinesh K. Aswal.jpeg`,
+      image: `${PUBLIC_URL}imgs/advisory/Dr-Dinesh-Aswal.jpeg`,
     },
     {
       name: "Prof. Dr. Vijayamohanan K. Pillai",
       title: "IISER Tirupati",
       affiliation: "Former Director, CECRI Karaikudi",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. Vijayamohanan K. Pillai.jpeg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-Vijayamohanan-Pillai.jpeg`,
     },
     {
       name: "Prof. Dr. Ajit Kulkarni",
       title: "",
       affiliation: "IIT Bombay",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. Ajit Kulkarni.jpg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-Ajit-Kulkarni.jpg`,
     },
     {
       name: "Prof. Dr. S. K. Varshney",
       title: "",
       affiliation: "IIT Kharagpur",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. S. K. Varshney.jpeg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-SK-Varshney.jpeg`,
     },
     {
       name: "Prof. Dr. Satish Patil",
       title: "",
       affiliation: "IISc Bengaluru",
-      image: `${PUBLIC_URL}imgs/advisory/Prof. Dr. Satish Patil.jpg`,
+      image: `${PUBLIC_URL}imgs/advisory/Prof-Dr-Satish-Patil.jpg`,
     },
   ];
 

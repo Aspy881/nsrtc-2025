@@ -9,50 +9,45 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 import Copyright from "./copyright";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 
 const Footer = () => {
   return (
     <>
       <footer className="bg-[#1E2B99] text-white px-6 py-10">
-        <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-8 px-16 items-start text-sm">
-          {/* Logo Section */}
-          <div className="flex justify-center md:justify-start relative">
+        <div className="w-full grid grid-cols-1 md:grid-cols-[auto_1fr_1fr_1fr] gap-8 px-8 lg:px-16 items-start text-sm">
+
+          {/* Logo + Divider */}
+          <div className="flex items-center relative">
             <img
-              src={`${PUBLIC_URL}MIT-white-logo-1.png`}
+              src={`${PUBLIC_URL}images/mit-wpu-logo-white.png`}
               alt="MIT-WPU Logo"
-              className="h-32 w-40 pr-4"
+              className="h-28 w-auto"
             />
-            <div className="hidden md:block absolute right-[4rem] top-0 h-full border-r-2 border-white" />
+            {/* Vertical Divider */}
+            <div className="hidden md:block h-24 w-px bg-white mx-20" />
           </div>
 
-          {/* Contact Section */}
-          <div className="md:col-span-1">
+          {/* Contact Info */}
+          <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p>
-              MIT World Peace University
-              <br />
-              Kothrud, Pune
-            </p>
-            <div className="mt-2 flex items-start space-x-2">
-              <FaEnvelope className="mt-1 text-sm" />
-              <a
-                href="mailto:nsrtc2025@mitwpu.edu.in"
-                className="hover:text-yellow-300 text-sm"
-              >
+            <p>MIT World Peace University<br />Kothrud, Pune</p>
+            <div className="flex items-start gap-2">
+              <FaEnvelope className="mt-[3px]" />
+              <a href="mailto:nsrtc2025@mitwpu.edu.in" className="hover:text-yellow-300">
                 nsrtc2025@mitwpu.edu.in
               </a>
             </div>
-            <div className="mt-2 flex items-start space-x-2">
-              <FaPhone className="mt-1 text-sm" />
-              <p className="text-sm">+91 83093 37736 | 94230 14560</p>
+            <div className="flex items-start gap-2">
+              <FaPhone className="mt-[3px]" />
+              <p>+91 83093 37736 | 94230 14560</p>
             </div>
           </div>
 
-          {/* Quick Links Section */}
-          <div className="md:col-span-1">
+          {/* Quick Links */}
+          <div className="space-y-2">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-            <ul className="list-none list-inside space-y-1 text-sm">
+            <ul className="space-y-1">
               <li>
                 <Link to="/registration" className="hover:text-yellow-300">
                   Registration
@@ -79,10 +74,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Follow Us Section */}
-          <div className="text-center md:col-span-1 md:text-left">
-            <h3 className="text-lg pb-2 font-semibold mb-2">Follow Us</h3>
-            <div className="flex justify-center md:justify-start space-x-6 text-2xl">
+          {/* Social Icons */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+            <div className="flex items-center gap-6 text-2xl">
               <a
                 href="https://www.instagram.com/nsrtc_bharat/"
                 target="_blank"
@@ -105,7 +100,7 @@ const Footer = () => {
                 href="https://twitter.com/nsrtcbharat"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="X (Twitter)"
+                aria-label="Twitter"
                 className="hover:text-gray-400 transition"
               >
                 <FaXTwitter />
@@ -123,10 +118,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom copyright */}
-        
+        {/* Copyright */}
+
       </footer>
-    <Copyright />
+              <Copyright />
     </>
   );
 };

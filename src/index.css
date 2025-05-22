@@ -1,0 +1,22 @@
+@import "tailwindcss";
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.bg-hero-pattern {
+  background-image: url("/nsrtc/imgs/hero-bg.jpg");
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+}

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import NavLink from "../atoms/NavLink";
-import { PUBLIC_URL } from '../../config';
+import { PUBLIC_URL } from "../../config";
 //import { Disclosure, Menu } from '@headlessui/react';
 //import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 
@@ -43,7 +43,7 @@ function Navbar({ transparent = false }) {
     : "text-blue-800 hover:text-red-600";
 
   return (
-   <header
+    <header
       className={`${navbarClass} fixed top-0 left-0 px-15 w-full z-50 transition-all duration-300`}
     >
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-3">
@@ -51,9 +51,7 @@ function Navbar({ transparent = false }) {
         <div className="flex items-center mx-5 justify-between w-full md:w-auto mb-4 md:mb-0">
           <Link to="/">
             <img
-              src={
-               `${PUBLIC_URL}images/nsrtc-logo.png`
-              }
+              src={`${PUBLIC_URL}images/nsrtc-logo.png`}
               alt="NSRTC Logo"
               className="h-30 w-auto"
             />
@@ -77,15 +75,15 @@ function Navbar({ transparent = false }) {
           <NavLink to="/" className={textColorClass}>
             Home
           </NavLink>
-
-          {/* NSRTC Dropdown */}
           <div className="relative group">
-            <button
-              className={`flex items-center ${textColorClass} font-semibold focus:outline-none`}
+            <div
+              className={`flex items-center cursor-pointer ${textColorClass} font-semibold focus:outline-none`}
             >
               About <ChevronDown className="ml-1 h-4 w-4" />
-            </button>
-            <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-200 z-50">
+            </div>
+
+            {/* Dropdown container */}
+            <div className="absolute w-56 bg-white shadow-lg rounded-md  opacity-0 invisible pointer-events-none group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
               <div className="py-1">
                 {[
                   ["About NSRTC", "/nsrtc/about"],
@@ -108,12 +106,13 @@ function Navbar({ transparent = false }) {
 
           {/* Committee Dropdown */}
           <div className="relative group">
-            <button
-              className={`flex items-center ${textColorClass} font-semibold focus:outline-none`}
+            <div
+              className={`flex items-center cursor-pointer ${textColorClass} font-semibold focus:outline-none`}
             >
               Committee <ChevronDown className="ml-1 h-4 w-4" />
-            </button>
-            <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-200 z-50">
+            </div>
+
+            <div className="absolute w-56 bg-white shadow-lg rounded-md opacity-0 invisible pointer-events-none group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
               <div className="py-1">
                 {[
                   ["Patrons", "/committees/patrons"],
@@ -141,7 +140,7 @@ function Navbar({ transparent = false }) {
           <NavLink to="/registration" className={textColorClass}>
             Registration
           </NavLink>
-          <NavLink to="/registration" className={textColorClass}>
+          <NavLink to="/sponsorship" className={textColorClass}>
             Sponsorship
           </NavLink>
           <NavLink to="/contact" className={textColorClass}>

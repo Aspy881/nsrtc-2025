@@ -16,6 +16,7 @@ import OrganizingTeam from "../pages/Committees/team";
 import Speakers from "../pages/Speakers";
 import Registration from "../pages/Registration";
 import Contact from "../pages/Contact";
+import SponsorshipPage from "../pages/Sponsorship";
 
 function AppRouter() {
   return (
@@ -46,6 +47,7 @@ function AppRouter() {
         {/* Other Routes */}
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/sponsorship" element={<SponsorshipPage />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>

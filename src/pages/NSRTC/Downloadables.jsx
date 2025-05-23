@@ -14,7 +14,7 @@ export default function Downloadables() {
       description:
         "Complete information about NSRTC 2025 including themes, schedule, and registration details",
       icon: <FilePdf className="h-10 w-10 text-red-600" />,
-      link: `${PUBLIC_URL}Downloadables/NSRTC Brochure 2025-Ver 23.pdf`,
+      link: `${PUBLIC_URL}Downloadables/NSRTC-2025-Brochure.pdf`,
     },
     {
       title: "Conference Logo",

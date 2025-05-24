@@ -273,7 +273,7 @@ const speakers = [
     image: `${PUBLIC_URL}imgs/speakers/Dr-Abhilash.jpg`,
   },
   {
-    name: "Dr Krishnanjan Bhattacharjee",
+    name: "Dr. Krishnanjan Bhattacharjee",
     title: "Scientist",
     affiliation: "C-DAC, Pune",
     image: `${PUBLIC_URL}imgs/speakers/Dr-Krishnanjan-Bhattacharjee.jpg`,

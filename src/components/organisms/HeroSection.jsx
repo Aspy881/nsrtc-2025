@@ -33,7 +33,7 @@ export default function HeroSection() {
             Register Now
           </a>
           <a
-            href={`${PUBLIC_URL}/Downloadables/NSRTC Brochure 2025-Ver 23.pdf`}
+            href={`${PUBLIC_URL}/Downloadables/NSRTC-2025-Brochure.pdf`}
             download
             className="px-8 py-4 bg-white text-black font-bold rounded-md hover:text-blue-900 transition duration-300 text-lg border border-gray-300"
           >

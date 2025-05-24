@@ -14,7 +14,7 @@ export default function RegistrationPage() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pt-16 px-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Registration"
@@ -22,7 +22,7 @@ export default function RegistrationPage() {
         />
 
         {/* Registration Fees */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden mb-12">
+        <div className="bg-white rounded-lg shadow-xl overflow-hidden mb-12">
           <div className="bg-blue-800 text-white p-6">
             <h3 className="text-3xl font-bold">Registration Fees</h3>
             <p className="mt-2 text-gray-200">
@@ -62,12 +62,12 @@ export default function RegistrationPage() {
         </div>
 
         {/* Registration Process */}
-        <div className="bg-white rounded-lg shadow-md p-8 mb-12">
+        <div className="bg-white rounded-lg shadow-xl p-8 mb-12">
           <h2 className="text-2xl font-bold text-blue-800 mb-6">
             Registration Process
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="border border-gray-200 rounded-lg p-6">
+            <div className="border shadow-md border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-red-700 mb-4">
                 Step 1: Fill the Registration Form
               </h3>
@@ -92,7 +92,7 @@ export default function RegistrationPage() {
               </div>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6">
+            <div className="border shadow-md border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-red-700 mb-4">
                 Step 2: Make the Payment
               </h3>

@@ -18,7 +18,7 @@ export default function SponsorshipPage() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pt-16 px-56 bg-gray-50">
       <div className="container mx-auto px-4">
         <SectionTitle
           title="Sponsorship"

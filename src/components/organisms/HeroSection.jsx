@@ -9,9 +9,9 @@ export default function HeroSection() {
     >
       <div className="w-full flex flex-col items-center text-center md:px-20 py-5">
         {/* Text Content */}
-        <div className="w-full max-w-5xl">
+        <div className="w-full max-w-6xl">
           <h1 className="text-2xl md:text-5xl font-bold text-white/85 leading-tight mb-4 transition duration-500 ease-in-out transform hover:scale-105">
-            National Scientists Round Table Conference (NSRTC 2025)
+            National Scientists Round Table Conference (NSRTC)
           </h1>
           <h3 className="text-xl md:text-4xl font-bold text-white/75 mb-8 transition duration-500">
             for Viksit Bharat 2047
@@ -33,7 +33,7 @@ export default function HeroSection() {
             Register Now
           </a>
           <a
-            href={`${PUBLIC_URL}/Downloadables/NSRTC Brochure 2025-Ver 23.pdf`}
+            href={`${PUBLIC_URL}/Downloadables/NSRTC-2025-Brochure.pdf`}
             download
             className="px-8 py-4 bg-white text-black font-bold rounded-md hover:text-blue-900 transition duration-300 text-lg border border-gray-300"
           >

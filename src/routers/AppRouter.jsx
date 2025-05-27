@@ -2,11 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import HomeLayout from "../layouts/HomeLayout";
 import Home from "../pages/Home";
-import AboutNSRTC from "../pages/NSRTC/AboutNSRTC";
-import ThemesPage from "../pages/NSRTC/ThemesPage";
-import SchedulePage from "../pages/NSRTC/SchedulePage";
-import PreviousConferences from "../pages/NSRTC/PreviousConferences";
-import Downloadables from "../pages/NSRTC/Downloadables";
+import AboutNSRTC from "../pages/About/AboutNSRTC";
+import ThemesPage from "../pages/About/ThemesPage";
+import SchedulePage from "../pages/About/SchedulePage";
+import PreviousConferences from "../pages/About/PreviousConferences";
+import Downloadables from "../pages/About/Downloadables";
 import Patrons from "../pages/Committees/Patrons";
 import CoChairmen from "../pages/Committees/CoChairmen";
 import Advisory from "../pages/Committees/Advisory";
@@ -27,11 +27,11 @@ function AppRouter() {
 
       <Route element={<MainLayout />}>
         {/* NSRTC Routes */}
-        <Route path="/nsrtc/about" element={<AboutNSRTC />} />
-        <Route path="/nsrtc/themes" element={<ThemesPage />} />
-        <Route path="/nsrtc/schedule" element={<SchedulePage />} />
-        <Route path="/nsrtc/previous" element={<PreviousConferences />} />
-        <Route path="/nsrtc/downloadables" element={<Downloadables />} />
+        <Route path="/about/aboutUs" element={<AboutNSRTC />} />
+        <Route path="/about/themes" element={<ThemesPage />} />
+        <Route path="/about/schedule" element={<SchedulePage />} />
+        <Route path="/about/previous" element={<PreviousConferences />} />
+        <Route path="/about/downloadables" element={<Downloadables />} />
 
         {/* Committee Routes */}
         <Route path="/committees/patrons" element={<Patrons />} />

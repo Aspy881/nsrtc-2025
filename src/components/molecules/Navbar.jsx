@@ -38,7 +38,7 @@ function Navbar({ transparent = false }) {
 
   const textColorClass = transparent
     ? isScrolled || isMenuOpen
-      ? "text-blue-800 hover:text-red-600"
+      ? "text-blue-800 hover:text-white"
       : "text-white hover:text-red-600"
     : "text-blue-800 hover:text-red-600";
 
@@ -86,11 +86,11 @@ function Navbar({ transparent = false }) {
             <div className="absolute w-56 bg-white shadow-lg rounded-md  opacity-0 invisible pointer-events-none group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100 transition-opacity duration-200 z-50">
               <div className="py-1">
                 {[
-                  ["About NSRTC", "/nsrtc/about"],
-                  ["Themes", "/nsrtc/themes"],
-                  ["Schedule", "/nsrtc/schedule"],
-                  ["Previous Conferences", "/nsrtc/previous"],
-                  ["Downloadables", "/nsrtc/downloadables"],
+                  ["About NSRTC", "/about/aboutUs"],
+                  ["Themes", "/about/themes"],
+                  ["Schedule", "/about/schedule"],
+                  ["Previous Conferences", "/about/previous"],
+                  ["Downloadables", "/about/downloadables"],
                 ].map(([label, to], i) => (
                   <Link
                     key={i}
